@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLE — Encodage</title>
+<script>var _0x23b512=_0x1c83;function _0xe242(){var _0x158d7d=['B2zMCMfUzgvZ','CMvJB21Tyw5KyxrPB25Z','q0furuDpuKLfuW','ndK5mfjpr29SCa','y29SBgvJDgvZ','otbJwKfxuMK','mteYsvLyr2XY','u2vTzxn0CMu','mZq5mZaYAg9ZBNLO','mtnjthLmreW','q29SBgvJDgvZig1LC3nLCW','mZy2ntK0meDND09bza','muTozwXRCa','mJq0nda2n1zAvuHOzq','uMvJB21Tyw5KyxrPB25ZigrLCYbKW6LMDw50CW','nhnpDLzLCa','tw9UDgjSAwfYDa','rmoPCgvUC2u','nJmWm0zPCwDMqG','ndGYmJGWrwLVCMfv','vhjVBMnZ','zgvWzw5Zzxm','mJC3nta5nMnhwMzkDW','mZq4otrhDMnztKu','uMvJzxr0zq','uefsqu1t','rmoPCgvUC2vZ'];_0xe242=function(){return _0x158d7d;};return _0xe242();}function _0x1c83(_0x85338d,_0x296bf0){var _0xe242a0=_0xe242();return _0x1c83=function(_0x1c83d1,_0x280453){_0x1c83d1=_0x1c83d1-0x130;var _0x9aa374=_0xe242a0[_0x1c83d1];if(_0x1c83['noUSKM']===undefined){var _0x412a7e=function(_0x28ed44){var _0x2ed53e='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x7bdb65='',_0xbbcc50='';for(var _0x5d5cb8=0x0,_0x4d3fa4,_0x3db567,_0x5a5a14=0x0;_0x3db567=_0x28ed44['charAt'](_0x5a5a14++);~_0x3db567&&(_0x4d3fa4=_0x5d5cb8%0x4?_0x4d3fa4*0x40+_0x3db567:_0x3db567,_0x5d5cb8++%0x4)?_0x7bdb65+=String['fromCharCode'](0xff&_0x4d3fa4>>(-0x2*_0x5d5cb8&0x6)):0x0){_0x3db567=_0x2ed53e['indexOf'](_0x3db567);}for(var _0x38ae6f=0x0,_0x19c2dd=_0x7bdb65['length'];_0x38ae6f<_0x19c2dd;_0x38ae6f++){_0xbbcc50+='%'+('00'+_0x7bdb65['charCodeAt'](_0x38ae6f)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xbbcc50);};_0x1c83['EtmSRN']=_0x412a7e,_0x85338d=arguments,_0x1c83['noUSKM']=!![];}var _0x1d20a1=_0xe242a0[0x0],_0x4f20a4=_0x1c83d1+_0x1d20a1,_0x261e8e=_0x85338d[_0x4f20a4];return!_0x261e8e?(_0x9aa374=_0x1c83['EtmSRN'](_0x9aa374),_0x85338d[_0x4f20a4]=_0x9aa374):_0x9aa374=_0x261e8e,_0x9aa374;},_0x1c83(_0x85338d,_0x296bf0);}(function(_0x1fec98,_0x32ac25){var _0x45fede=_0x1c83,_0x5d69d6=_0x1fec98();while(!![]){try{var _0x391099=parseInt(_0x45fede(0x131))/0x1*(-parseInt(_0x45fede(0x13c))/0x2)+-parseInt(_0x45fede(0x132))/0x3+-parseInt(_0x45fede(0x134))/0x4*(parseInt(_0x45fede(0x130))/0x5)+parseInt(_0x45fede(0x148))/0x6*(parseInt(_0x45fede(0x146))/0x7)+-parseInt(_0x45fede(0x138))/0x8*(-parseInt(_0x45fede(0x145))/0x9)+-parseInt(_0x45fede(0x143))/0xa*(-parseInt(_0x45fede(0x137))/0xb)+parseInt(_0x45fede(0x13b))/0xc*(parseInt(_0x45fede(0x149))/0xd);if(_0x391099===_0x32ac25)break;else _0x5d69d6['push'](_0x5d69d6['shift']());}catch(_0x10d7fd){_0x5d69d6['push'](_0x5d69d6['shift']());}}}(_0xe242,0x76b27),window[_0x23b512(0x13e)]={'clocher':_0x23b512(0x135),'periodicite':_0x23b512(0x147)},window[_0x23b512(0x142)]=[{'id':'troncs','libelle':_0x23b512(0x139),'type':_0x23b512(0x13d)},{'id':_0x23b512(0x144),'libelle':_0x23b512(0x14a),'type':_0x23b512(0x13d)},{'id':_0x23b512(0x140),'libelle':'Offrandes\x20Bapt./Mariages/Fun.','type':'Recette'},{'id':_0x23b512(0x141),'libelle':_0x23b512(0x133),'type':_0x23b512(0x13d)},{'id':_0x23b512(0x13a),'libelle':_0x23b512(0x13f),'type':_0x23b512(0x136)}]);</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bleu: #1a56a0;
+  --bleu-clair: #e8f0fb;
+  --vert: #1e7e34;
+  --rouge: #c0392b;
+  --orange: #e67e22;
+  --gris-bord: #d0d4dc;
+  --texte: #222;
+  --texte-doux: #555;
+  --radius: 6px;
+  --ombre: 0 2px 8px rgba(0,0,0,0.10);
+}
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; color: var(--texte); background: #e9ecf3; min-height: 100vh; }
+
+/* HEADER */
+header { background: var(--bleu); color: #fff; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; box-shadow: var(--ombre); }
+header h1 { font-size: 1.1rem; font-weight: 700; }
+
+/* MAIN */
+main { max-width: 900px; margin: 20px auto; padding: 0 14px; }
+
+/* CARD */
+.card { background: #fff; border-radius: var(--radius); box-shadow: var(--ombre); padding: 20px; margin-bottom: 16px; }
+.card h2 { font-size: 0.95rem; font-weight: 700; color: var(--bleu); margin-bottom: 14px; padding-bottom: 7px; border-bottom: 2px solid var(--bleu-clair); }
+
+/* PÉRIODE */
+.periode-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.btn-nav { background: var(--bleu-clair); border: 1px solid #b8cef0; color: var(--bleu); border-radius: var(--radius); padding: 6px 14px; font-size: 1rem; cursor: pointer; font-weight: 700; }
+.btn-nav:hover { background: #d0e2f8; }
+.periode-label { font-weight: 700; font-size: 1rem; color: var(--bleu); min-width: 140px; text-align: center; }
+select.sel-periode, input.inp-annee { border: 1px solid var(--gris-bord); border-radius: var(--radius); padding: 6px 10px; font-size: 0.93rem; outline: none; }
+select.sel-periode:focus, input.inp-annee:focus { border-color: var(--bleu); }
+input.inp-annee { width: 80px; text-align: center; }
+
+/* ONGLETS */
+.onglets { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 16px; border-bottom: 2px solid var(--bleu-clair); padding-bottom: 0; }
+.onglet { padding: 8px 14px; border: 1px solid var(--gris-bord); border-bottom: none; border-radius: var(--radius) var(--radius) 0 0; cursor: pointer; font-size: 0.85rem; font-weight: 600; background: #f0f4fa; color: var(--texte-doux); transition: background .15s; position: relative; top: 2px; max-width: 160px; text-align: center; line-height: 1.3; }
+.onglet:hover { background: var(--bleu-clair); color: var(--bleu); }
+.onglet.actif { background: #fff; color: var(--bleu); border-color: var(--bleu-clair); border-bottom-color: #fff; }
+.onglet .badge { display: inline-block; background: var(--bleu-clair); color: var(--bleu); border-radius: 10px; font-size: 0.72rem; padding: 1px 7px; margin-left: 5px; font-weight: 700; }
+.onglet.actif .badge { background: var(--bleu); color: #fff; }
+
+/* FORMULAIRE */
+.form-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; }
+.form-group { display: flex; flex-direction: column; gap: 4px; }
+.form-group label { font-size: 0.78rem; font-weight: 700; color: var(--texte-doux); text-transform: uppercase; letter-spacing: .04em; }
+.form-group input { border: 1px solid var(--gris-bord); border-radius: var(--radius); padding: 8px 10px; font-size: 0.93rem; outline: none; transition: border-color .2s; }
+.form-group input:focus { border-color: var(--bleu); }
+.form-group input.erreur { border-color: var(--rouge); }
+.msg-erreur { font-size: 0.76rem; color: var(--rouge); min-height: 1em; }
+.btn { padding: 8px 20px; border: none; border-radius: var(--radius); font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: opacity .18s; }
+.btn:disabled { opacity: 0.42; cursor: not-allowed; }
+.btn-vert { background: var(--vert); color: #fff; }
+.btn-bleu { background: var(--bleu); color: #fff; }
+.btn-bleu:not(:disabled):hover, .btn-vert:not(:disabled):hover { opacity: 0.88; }
+.btn-rouge { background: var(--rouge); color: #fff; }
+.btn-gris { background: var(--gris-bord); color: var(--texte); }
+
+/* TABLEAU */
+.tableau-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+thead th { background: var(--bleu-clair); color: var(--bleu); font-weight: 700; padding: 8px 10px; text-align: left; white-space: nowrap; }
+tbody tr { border-bottom: 1px solid var(--gris-bord); cursor: pointer; transition: background .12s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #f0f5ff; }
+tbody tr.en-edition { background: #fffbea; }
+tbody td { padding: 7px 10px; vertical-align: middle; }
+td.col-montant { font-weight: 700; text-align: right; white-space: nowrap; color: var(--vert); }
+td.col-montant.total-dep { color: var(--rouge); }
+.btn-suppr { background: none; border: none; color: #bbb; font-size: 1.1rem; cursor: pointer; padding: 2px 6px; border-radius: 4px; }
+.btn-suppr:hover { color: var(--rouge); background: #fde8e6; }
+.liste-vide { text-align: center; padding: 24px; color: var(--texte-doux); font-style: italic; }
+
+/* PIED */
+.pied-totaux { display: flex; gap: 20px; flex-wrap: wrap; padding: 10px 0 0; font-size: 0.88rem; font-weight: 700; }
+.pied-totaux .total-rec { color: var(--vert); }
+.pied-totaux .total-dep { color: var(--rouge); }
+.pied-totaux .solde { color: var(--bleu); }
+
+/* VERSEMENT */
+#verse-section { display: none; margin-top: 10px; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+/* ACTIONS */
+.actions-export { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+.badge-lignes { font-size: 0.82rem; color: var(--texte-doux); }
+.info-edition { font-size: 0.8rem; color: var(--orange); font-style: italic; }
+
+/* ALERTE */
+#alerte-globale { display: none; position: fixed; top: 58px; left: 50%; transform: translateX(-50%); z-index: 200; min-width: 280px; max-width: 500px; text-align: center; padding: 10px 18px; border-radius: var(--radius); box-shadow: 0 4px 16px rgba(0,0,0,.18); font-weight: 600; font-size: 0.88rem; }
+#alerte-globale.info   { background: #e8f5e9; border: 1px solid #a5d6a7; color: #1b5e20; }
+#alerte-globale.erreur { background: #fde8e6; border: 1px solid #f5c6c2; color: var(--rouge); }
+
+</style>
+</head>
+<body>
+<div id="alerte-globale"></div>
+
+<header>
+  <h1 id="header-titre">Clocher</h1>
+</header>
+
+<main>
+  <!-- Période -->
+  <div class="card">
+    <h2>Période</h2>
+    <div class="periode-row">
+      <button class="btn-nav" onclick="naviguerPeriode(-1)">‹</button>
+      <span class="periode-label" id="label-periode"></span>
+      <button class="btn-nav" onclick="naviguerPeriode(1)">›</button>
+      <select class="sel-periode" id="sel-type-periode" onchange="changerTypePeriode(this.value)">
+        <option value="Mois">Mois</option>
+        <option value="Trimestre">Trimestre</option>
+        <option value="Semestre">Semestre</option>
+        <option value="Année">Année</option>
+      </select>
+      <input class="inp-annee" id="inp-annee" type="text" inputmode="numeric" maxlength="4" onchange="changerAnnee(parseInt(this.value))" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+    </div>
+  </div>
+
+  <!-- Encodage -->
+  <div class="card">
+    <h2>Encodage</h2>
+
+    <!-- Onglets -->
+    <div class="onglets" id="onglets"></div>
+
+    <!-- Formulaire -->
+    <form id="form-saisie" onsubmit="soumettreFormulaire(event)" style="margin-bottom:16px">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inp-date">Date <span style="color:var(--rouge)">*</span></label>
+          <input type="text" id="inp-date" placeholder="JJ/MM" maxlength="5" autocomplete="off" style="width:90px" oninput="autoSlashDate(this)">
+          <div class="msg-erreur" id="err-date"></div>
+        </div>
+        <div class="form-group" style="flex:1 1 200px">
+          <label for="inp-libelle">Libellé</label>
+          <input type="text" id="inp-libelle" placeholder="Libellé (optionnel)" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="inp-montant">Montant <span style="color:var(--rouge)">*</span></label>
+          <input type="text" id="inp-montant" placeholder="0.00" autocomplete="off" style="width:110px" oninput="this.value=this.value.replace(/[^0-9.,]/g,'')">
+          <div class="msg-erreur" id="err-montant"></div>
+        </div>
+        <div class="form-group" style="justify-content:flex-end;padding-bottom:4px">
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <button type="submit" class="btn btn-vert" id="btn-ajouter">OK</button>
+            <button type="button" class="btn btn-gris" id="btn-annuler" onclick="annulerEdition()" style="display:none">Annuler</button>
+          </div>
+          <div class="info-edition" id="info-edition" style="display:none;margin-top:4px">Cliquez sur une ligne pour la modifier.</div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Tableau -->
+    <div class="tableau-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Libellé</th>
+            <th style="text-align:right">Montant</th>
+            <th style="width:40px"></th>
+          </tr>
+        </thead>
+        <tbody id="corps-tableau"></tbody>
+      </table>
+    </div>
+    <div class="liste-vide" id="liste-vide">Aucune ligne saisie.</div>
+    <div class="pied-totaux" id="pied-totaux"></div>
+
+    <!-- Versement -->
+    <div id="verse-section">
+      <label for="inp-verse-montant" style="margin:0;font-weight:600;white-space:nowrap">Versé</label>
+      <input type="text" id="inp-verse-montant" placeholder="0.00" autocomplete="off" style="width:90px" oninput="validerMontantVerse();sauvegarderVerse();calculerFondsCaisse()">
+      <span style="color:var(--texte-doux);font-size:0.9em">€</span>
+      <label for="inp-verse-date" style="margin:0;font-weight:600;white-space:nowrap">le</label>
+      <input type="text" id="inp-verse-date" placeholder="JJ/MM/AAAA" maxlength="10" autocomplete="off" style="width:120px" oninput="autoSlashDateLong(this);validerEtSauvegarderVerse()">
+      <span id="err-verse-date" style="font-size:0.76rem;color:var(--rouge);display:none">Date invalide.</span>
+      <span style="margin-left:16px;font-weight:600;white-space:nowrap">Fonds de caisse</span>
+      <span id="fonds-caisse" style="font-weight:600"></span>
+    </div>
+
+    <div style="margin-top:12px">
+      <label for="inp-notes" style="font-weight:600;display:block;margin-bottom:4px">Notes</label>
+      <textarea id="inp-notes" rows="3" style="width:100%;border:1px solid var(--gris-bord);border-radius:var(--radius);padding:8px;font-size:0.93rem;resize:vertical" oninput="sauvegarderNotes()" placeholder="Notes éventuelles…"></textarea>
+    </div>
+
+    <div class="actions-export">
+      <button class="btn btn-gris" id="btn-imprimer" onclick="imprimerTableau()" disabled>🖨 Imprimer</button>
+      <button class="btn btn-bleu" id="btn-deplacer" onclick="ouvrirDeplacer()" disabled>↷ Déplacer vers…</button>
+      <button class="btn btn-rouge" id="btn-vider" onclick="viderPeriode()" disabled>✕ Vider</button>
+<span class="badge-lignes" id="badge-lignes"></span>
+    </div>
+  </div>
+
+  <!-- Dialogue déplacer -->
+  <div id="dlg-deplacer" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:300;align-items:center;justify-content:center" onclick="if(event.target===this)fermerDeplacer()">
+    <div style="background:#fff;border-radius:8px;padding:28px 32px;min-width:320px;box-shadow:0 8px 32px rgba(0,0,0,.25)">
+      <h3 style="margin-bottom:16px;color:var(--bleu)">Déplacer vers une autre période</h3>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div>
+          <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:4px">Type de période</label>
+          <select id="dlg-type" style="width:100%;padding:8px;border:1px solid var(--gris-bord);border-radius:var(--radius);font-size:0.93rem">
+            <option value="Mois">Mois</option>
+            <option value="Trimestre">Trimestre</option>
+            <option value="Semestre">Semestre</option>
+            <option value="Année">Année</option>
+          </select>
+        </div>
+        <div id="dlg-valeur-row">
+          <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:4px" id="dlg-valeur-label">Numéro</label>
+          <select id="dlg-valeur" style="width:100%;padding:8px;border:1px solid var(--gris-bord);border-radius:var(--radius);font-size:0.93rem"></select>
+        </div>
+        <div>
+          <label style="font-weight:600;font-size:0.85rem;display:block;margin-bottom:4px">Année</label>
+          <input id="dlg-annee" type="text" inputmode="numeric" maxlength="4" style="width:100%;padding:8px;border:1px solid var(--gris-bord);border-radius:var(--radius);font-size:0.93rem" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:20px;justify-content:flex-end">
+        <button class="btn btn-gris" onclick="fermerDeplacer()">Annuler</button>
+        <button class="btn btn-bleu" onclick="confirmerDeplacer()">Déplacer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dialogue confirmation générique -->
+  <div id="dlg-confirm" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:400;align-items:center;justify-content:center" onclick="if(event.target===this)fermerConfirm()">
+    <div style="background:#fff;border-radius:8px;padding:28px 32px;min-width:300px;max-width:440px;box-shadow:0 8px 32px rgba(0,0,0,.25)">
+      <p id="dlg-confirm-msg" style="margin-bottom:20px;font-size:0.95rem;line-height:1.5;color:var(--texte)"></p>
+      <div id="dlg-confirm-btns" style="display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+'use strict';
+
+const params = window.PARAMS;
+const CATS   = window.CATEGORIES;
+
+document.getElementById('header-titre').textContent = params.clocher;
+
+// ══════════════════════════════════
+// État
+// ══════════════════════════════════
+let periode = { type: params.periodicite || 'Mois', annee: new Date().getFullYear(), valeur: new Date().getMonth() + 1 };
+let catActive = 0;
+let lignes = [];
+let modeEdition = false, idEnEdition = null, posEdition = -1, ligneEditionSauvee = null;
+
+const MOIS_NOMS = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+
+// ══════════════════════════════════
+// Période
+// ══════════════════════════════════
+function labelPeriode(p = periode) {
+  const { type, annee, valeur } = p;
+  switch (type) {
+    case 'Mois':      return MOIS_NOMS[(valeur || 1) - 1] + ' ' + annee;
+    case 'Trimestre': return 'T' + valeur + ' ' + annee;
+    case 'Semestre':  return 'S' + valeur + ' ' + annee;
+    case 'Année':     return String(annee);
+    default:          return String(annee);
+  }
+}
+
+function sauvegarderPeriode() { localStorage.setItem('clc_periode', JSON.stringify(periode)); }
+
+function chargerPeriode() {
+  const raw = localStorage.getItem('clc_periode');
+  if (raw) { try { Object.assign(periode, JSON.parse(raw)); } catch(e) {} }
+  periode.type = params.periodicite || 'Mois';
+  if (!periode.valeur) periode.valeur = 1;
+}
+
+function renderUIperiode() {
+  document.getElementById('label-periode').textContent = labelPeriode();
+  document.getElementById('inp-annee').value = periode.annee;
+  const sel = document.getElementById('sel-type-periode');
+  sel.value = periode.type;
+}
+
+function bloquerSiDonnees() {
+  if (lignes.length > 0) {
+    afficherAlerte('La période ' + labelPeriode() + ' contient des données. Videz-la ou déplacez-la avant de changer de période.', 'erreur');
+    return true;
+  }
+  return false;
+}
+
+function changerTypePeriode(val) {
+  if (bloquerSiDonnees()) { renderUIperiode(); return; }
+  periode.type = val;
+  periode.valeur = 1;
+  sauvegarderPeriode();
+  renderUIperiode();
+  reinitialiserFormulaire();
+  chargerVerse(); chargerNotes();
+  chargerLignes();
+  rafraichirOnglets();
+  rafraichirTableau();
+}
+
+function changerAnnee(val) {
+  if (isNaN(val) || val < 2000 || val > 2100) return;
+  if (bloquerSiDonnees()) { renderUIperiode(); return; }
+  periode.annee = val;
+  sauvegarderPeriode();
+  renderUIperiode();
+  reinitialiserFormulaire();
+  chargerVerse(); chargerNotes();
+  chargerLignes();
+  rafraichirOnglets();
+  rafraichirTableau();
+}
+
+function naviguerPeriode(delta) {
+  if (bloquerSiDonnees()) return;
+  const { type } = periode;
+  if (type === 'Année') {
+    periode.annee += delta;
+  } else if (type === 'Mois') {
+    let m = (periode.valeur || 1) + delta;
+    if (m < 1)  { m = 12; periode.annee--; }
+    if (m > 12) { m = 1;  periode.annee++; }
+    periode.valeur = m;
+  } else if (type === 'Trimestre') {
+    let t = (periode.valeur || 1) + delta;
+    if (t < 1) { t = 4; periode.annee--; }
+    if (t > 4) { t = 1; periode.annee++; }
+    periode.valeur = t;
+  } else if (type === 'Semestre') {
+    let s = (periode.valeur || 1) + delta;
+    if (s < 1) { s = 2; periode.annee--; }
+    if (s > 2) { s = 1; periode.annee++; }
+    periode.valeur = s;
+  }
+  sauvegarderPeriode();
+  renderUIperiode();
+  reinitialiserFormulaire();
+  chargerVerse(); chargerNotes();
+  chargerLignes();
+  rafraichirOnglets();
+  rafraichirTableau();
+}
+
+// ══════════════════════════════════
+// Onglets
+// ══════════════════════════════════
+function rafraichirOnglets() {
+  const container = document.getElementById('onglets');
+  container.innerHTML = '';
+  CATS.forEach((cat, idx) => {
+    const nb = lignes.filter(l => l.catIdx === idx).length;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'onglet' + (idx === catActive ? ' actif' : '');
+    btn.innerHTML = cat.libelle + (nb > 0 ? ' <span class="badge">' + nb + '</span>' : '');
+    btn.onclick = () => basculerOnglet(idx);
+    container.appendChild(btn);
+  });
+}
+
+function basculerOnglet(idx) {
+  catActive = idx;
+  annulerEdition();
+  rafraichirOnglets();
+  rafraichirTableau();
+}
+
+// ══════════════════════════════════
+// localStorage
+// ══════════════════════════════════
+function cleLignes(p = periode) {
+  const { type, annee, valeur } = p;
+  if (type === 'Année') return 'clc_lignes_' + type + '_' + annee + '_0';
+  return 'clc_lignes_' + type + '_' + annee + '_' + valeur;
+}
+
+function cleVerse(p = periode) {
+  const { type, annee, valeur } = p;
+  if (type === 'Année') return 'clc_verse_' + type + '_' + annee + '_0';
+  return 'clc_verse_' + type + '_' + annee + '_' + valeur;
+}
+function cleNotes(p = periode) { return cleVerse(p).replace('clc_verse_', 'clc_notes_'); }
+function chargerNotes() { document.getElementById('inp-notes').value = localStorage.getItem(cleNotes()) || ''; }
+function sauvegarderNotes() { localStorage.setItem(cleNotes(), document.getElementById('inp-notes').value); }
+
+function chargerLignes() {
+  const raw = localStorage.getItem(cleLignes());
+  lignes = raw ? JSON.parse(raw) : [];
+}
+
+function sauvegarderLignes() {
+  try { localStorage.setItem(cleLignes(), JSON.stringify(lignes)); } catch(e) {}
+}
+
+
+function chargerVerse() {
+  const raw = localStorage.getItem(cleVerse());
+  const data = raw ? JSON.parse(raw) : {};
+  document.getElementById('inp-verse-montant').value = data.montant || '';
+  document.getElementById('inp-verse-date').value    = data.date    || '';
+}
+
+function sauvegarderVerse() {
+  const data = { montant: document.getElementById('inp-verse-montant').value, date: document.getElementById('inp-verse-date').value };
+  localStorage.setItem(cleVerse(), JSON.stringify(data));
+}
+
+function validerMontantVerse() {
+  const inp = document.getElementById('inp-verse-montant');
+  inp.value = inp.value.replace(/[^0-9.,]/g, '');
+  const v   = inp.value.trim().replace(',', '.');
+  const invalide = v.length > 0 && (isNaN(Number(v)) || Number(v) < 0);
+  inp.classList.toggle('erreur', invalide);
+}
+
+function validerEtSauvegarderVerse() {
+  const inp = document.getElementById('inp-verse-date');
+  const err = document.getElementById('err-verse-date');
+  const v   = inp.value.trim();
+  const invalide = /^\d{2}\/\d{2}\/\d{4}$/.test(v) && !validerDateLongue(v);
+  inp.classList.toggle('erreur', invalide);
+  if (err) err.style.display = invalide ? 'inline' : 'none';
+  sauvegarderVerse();
+}
+
+function calculerFondsCaisse() {
+  const el = document.getElementById('fonds-caisse');
+  if (!el) return;
+  const solde = lignes.reduce((s, l) => s + l.montant, 0);
+  const verse  = parseFloat(document.getElementById('inp-verse-montant').value.replace(',', '.')) || 0;
+  const fonds  = solde - verse;
+  el.textContent = (fonds >= 0 ? '+' : '-') + fmt(Math.abs(fonds)) + ' €';
+  el.style.color = fonds < 0 ? 'var(--rouge)' : 'inherit';
+}
+
+// ══════════════════════════════════
+// Formulaire
+// ══════════════════════════════════
+function autoSlashDateLong(inp) {
+  const prev = inp.dataset.prev || '';
+  const growing = inp.value.length > prev.length;
+  inp.dataset.prev = inp.value;
+  if (!growing) return;
+  let v = inp.value.replace(/[^0-9]/g, '');
+  if (v.length >= 2) v = v.slice(0, 2) + '/' + v.slice(2);
+  if (v.length >= 5) v = v.slice(0, 5) + '/' + v.slice(5, 9);
+  inp.value = v;
+  inp.dataset.prev = v;
+}
+
+function autoSlashDate(inp) {
+  const prev = inp.dataset.prev || '';
+  const growing = inp.value.length > prev.length;
+  inp.dataset.prev = inp.value;
+  if (!growing) return;
+  let v = inp.value.replace(/[^0-9]/g, '');
+  if (v.length >= 2) v = v.slice(0, 2) + '/' + v.slice(2, 4);
+  inp.value = v;
+  inp.dataset.prev = v;
+}
+
+function validerDate(s) {
+  if (!s || !/^\d{1,2}\/\d{1,2}$/.test(s)) return false;
+  const [j, m] = s.split('/').map(Number);
+  if (m < 1 || m > 12 || j < 1) return false;
+  const maxJ = [31,29,31,30,31,30,31,31,30,31,30,31][m - 1];
+  return j <= maxJ;
+}
+
+function validerDateLongue(s) {
+  if (!s || !/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(s)) return false;
+  const [j, m, a] = s.split('/').map(Number);
+  if (m < 1 || m > 12 || j < 1 || a < 2000 || a > 2100) return false;
+  const maxJ = [31,28,31,30,31,30,31,31,30,31,30,31][m - 1] + (m === 2 && a % 4 === 0 && (a % 100 !== 0 || a % 400 === 0) ? 1 : 0);
+  return j <= maxJ;
+}
+
+function setErreur(id, msg) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = msg;
+}
+
+function reinitialiserFormulaire() {
+  modeEdition = false; idEnEdition = null; posEdition = -1; ligneEditionSauvee = null;
+  document.getElementById('btn-ajouter').textContent = 'OK';
+  document.getElementById('btn-annuler').style.display = 'none';
+  document.getElementById('info-edition').style.display = 'none';
+  document.getElementById('inp-date').value    = '';
+  document.getElementById('inp-libelle').value = '';
+  document.getElementById('inp-montant').value = '';
+  setErreur('err-date', '');
+  setErreur('err-montant', '');
+}
+
+function soumettreFormulaire(e) {
+  e.preventDefault();
+  setErreur('err-date', ''); setErreur('err-montant', '');
+
+  const dateStr    = document.getElementById('inp-date').value.trim();
+  const libelle    = document.getElementById('inp-libelle').value.trim();
+  const montantStr = document.getElementById('inp-montant').value.trim().replace(',', '.');
+  let ok = true;
+
+  if (!validerDate(dateStr)) { setErreur('err-date', 'Date invalide (JJ/MM).'); ok = false; }
+
+  const montantRaw = parseFloat(montantStr);
+  if (isNaN(montantRaw) || montantRaw <= 0) { setErreur('err-montant', 'Montant invalide.'); ok = false; }
+  if (!ok) return;
+
+  const [j, m] = dateStr.split('/').map(Number);
+  const cat = CATS[catActive];
+  const montant = cat.type === 'Dépense' ? -Math.abs(montantRaw) : Math.abs(montantRaw);
+
+  if (modeEdition) {
+    const ligne = { id: idEnEdition, numeroOp: ligneEditionSauvee.numeroOp, annee: periode.annee, dateJour: j, dateMois: m, libelle: libelle || cat.libelle, montant, catIdx: catActive };
+    lignes.splice(posEdition, 0, ligne);
+  } else {
+    const ligne = { id: genId(), annee: periode.annee, dateJour: j, dateMois: m, libelle: libelle || cat.libelle, montant, catIdx: catActive };
+    lignes.push(ligne);
+  }
+
+  sauvegarderLignes();
+  reinitialiserFormulaire();
+  rafraichirOnglets();
+  rafraichirTableau();
+  document.getElementById('inp-date').focus();
+}
+
+function clicLigne(id) {
+  const idx = lignes.findIndex(l => l.id === id);
+  if (idx === -1) return;
+  const ligne = lignes[idx];
+  if (ligne.catIdx !== catActive) return;
+  posEdition = idx; idEnEdition = id; modeEdition = true;
+  ligneEditionSauvee = Object.assign({}, ligne);
+  lignes.splice(idx, 1);
+  sauvegarderLignes();
+
+  document.getElementById('btn-ajouter').textContent = '✓ Mettre à jour';
+  document.getElementById('btn-annuler').style.display = 'inline-block';
+  document.getElementById('info-edition').style.display = 'block';
+
+  const j  = String(ligne.dateJour).padStart(2, '0');
+  const mo = String(ligne.dateMois).padStart(2, '0');
+  document.getElementById('inp-date').value    = j + '/' + mo;
+  document.getElementById('inp-libelle').value = ligne.libelle === CATS[catActive].libelle ? '' : ligne.libelle;
+  document.getElementById('inp-montant').value = String(Math.abs(ligne.montant));
+
+  rafraichirOnglets();
+  rafraichirTableau();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function annulerEdition() {
+  if (modeEdition && ligneEditionSauvee) { lignes.splice(posEdition, 0, ligneEditionSauvee); sauvegarderLignes(); }
+  reinitialiserFormulaire();
+  rafraichirOnglets();
+  rafraichirTableau();
+  document.getElementById('inp-date').focus();
+}
+
+function supprimerLigne(id, e) {
+  e.stopPropagation();
+  confirmerAction('Supprimer cette ligne ?', [
+    { label: 'Annuler', style: 'btn-gris' },
+    { label: 'Supprimer', style: 'btn-rouge', action: () => {
+      lignes = lignes.filter(l => l.id !== id);
+      sauvegarderLignes();
+      rafraichirOnglets();
+      rafraichirTableau();
+      document.getElementById('inp-date').focus();
+    }}
+  ]);
+}
+
+// ══════════════════════════════════
+// Tableau
+// ══════════════════════════════════
+function rafraichirTableau() {
+  const corps   = document.getElementById('corps-tableau');
+  const vide    = document.getElementById('liste-vide');
+  const pied    = document.getElementById('pied-totaux');
+  const badge   = document.getElementById('badge-lignes');
+  const btnImp  = document.getElementById('btn-imprimer');
+
+  corps.innerHTML = '';
+
+  const lignesCat = lignes.filter(l => l.catIdx === catActive)
+    .sort((a, b) => a.dateMois - b.dateMois || a.dateJour - b.dateJour);
+
+  // Solde global toutes catégories
+  const totRec = lignes.filter(l => l.montant > 0).reduce((s, l) => s + l.montant, 0);
+  const totDep = lignes.filter(l => l.montant < 0).reduce((s, l) => s + l.montant, 0);
+  const solde  = totRec + totDep;
+
+  if (lignesCat.length === 0) {
+    vide.style.display = 'block';
+    badge.textContent = '';
+    pied.innerHTML = solde !== 0
+      ? '<span class="' + (solde > 0 ? 'total-rec' : 'total-dep') + '">Solde global : ' + (solde >= 0 ? '+' : '-') + fmt(Math.abs(solde)) + ' €<\/span>'
+      : '';
+  } else {
+    vide.style.display = 'none';
+    const cat = CATS[catActive];
+    const totalCat = lignesCat.reduce((s, l) => s + l.montant, 0);
+
+    lignesCat.forEach(l => {
+      const j  = String(l.dateJour).padStart(2, '0');
+      const mo = String(l.dateMois).padStart(2, '0');
+      const tr = document.createElement('tr');
+      if (modeEdition && l.id === idEnEdition) tr.classList.add('en-edition');
+      tr.onclick = () => clicLigne(l.id);
+      tr.innerHTML =
+        '<td>' + j + '/' + mo + '<\/td>' +
+        '<td>' + esc(l.libelle) + '<\/td>' +
+        '<td class="col-montant ' + (l.montant >= 0 ? 'total-rec' : 'total-dep') + '">' + (l.montant >= 0 ? '+' : '-') + fmt(Math.abs(l.montant)) + ' €<\/td>' +
+        '<td><button class="btn-suppr" title="Supprimer" onclick="supprimerLigne(\'' + esc(l.id) + '\',event)">✕<\/button><\/td>';
+      corps.appendChild(tr);
+    });
+
+    badge.textContent = lignes.length + ' ligne' + (lignes.length > 1 ? 's encodées' : ' encodée');
+    pied.innerHTML = '<span class="' + (cat.type === 'Recette' ? 'total-rec' : 'total-dep') + '">' +
+      cat.libelle + ' : ' + (totalCat >= 0 ? '+' : '-') + fmt(Math.abs(totalCat)) + ' €<\/span>' +
+      '<span class="' + (solde > 0 ? 'total-rec' : solde < 0 ? 'total-dep' : 'solde') + '">Solde global : ' + (solde >= 0 ? '+' : '-') + fmt(Math.abs(solde)) + ' €<\/span>';
+  }
+
+  const hasAny = lignes.length > 0;
+btnImp.disabled = !hasAny;
+  document.getElementById('btn-deplacer').disabled = !hasAny;
+  document.getElementById('btn-vider').disabled = !hasAny;
+
+  if (hasAny) {
+    document.getElementById('verse-section').style.display = 'flex';
+calculerFondsCaisse();
+  } else {
+    document.getElementById('verse-section').style.display = 'none';
+  }
+}
+
+// ══════════════════════════════════
+// Utilitaires
+// ══════════════════════════════════
+function genId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+function fmt(n) { return n.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+
+function afficherAlerte(msg, type) {
+  const el = document.getElementById('alerte-globale');
+  el.textContent = msg;
+  el.className = type;
+  el.style.display = 'block';
+  setTimeout(() => { el.style.display = 'none'; }, 3500);
+}
+
+// ══════════════════════════════════
+// Dialogue de confirmation générique
+// ══════════════════════════════════
+function confirmerAction(msg, boutons) {
+  const dlg  = document.getElementById('dlg-confirm');
+  document.getElementById('dlg-confirm-msg').textContent = msg;
+  const cont = document.getElementById('dlg-confirm-btns');
+  cont.innerHTML = '';
+  boutons.forEach(b => {
+    const btn = document.createElement('button');
+    btn.className = 'btn ' + (b.style || 'btn-gris');
+    btn.textContent = b.label;
+    btn.onclick = () => { fermerConfirm(); if (b.action) b.action(); };
+    cont.appendChild(btn);
+  });
+  dlg.style.display = 'flex';
+  dlg.onkeydown = e => { if (e.key === 'Escape') fermerConfirm(); };
+  cont.querySelector('button').focus();
+}
+
+function fermerConfirm() {
+  document.getElementById('dlg-confirm').style.display = 'none';
+}
+
+// ══════════════════════════════════
+// Impression
+// ══════════════════════════════════
+function imprimerTableau() {
+  const totRec = lignes.filter(l => l.montant > 0).reduce((s, l) => s + l.montant, 0);
+  const totDep = lignes.filter(l => l.montant < 0).reduce((s, l) => s + l.montant, 0);
+  const solde  = totRec + totDep;
+  const verse  = parseFloat(document.getElementById('inp-verse-montant').value.replace(',', '.')) || 0;
+  const fonds  = solde - verse;
+
+  let tablesHTML = '';
+  let sousTotal = 0;
+  let recTitreMis = false;
+  let sousTotalMis = false;
+  CATS.forEach((cat, idx) => {
+    const lcat = lignes.filter(l => l.catIdx === idx)
+      .sort((a, b) => a.dateMois - b.dateMois || a.dateJour - b.dateJour);
+    if (cat.type === 'Dépense' && !sousTotalMis) {
+      const hasDepenses = lignes.some(l => CATS[l.catIdx] && CATS[l.catIdx].type === 'Dépense');
+      if (recTitreMis && CATS.filter(c => c.type === 'Recette').length > 1)
+        tablesHTML += '<table style="margin-top:6px;margin-bottom:16px"><tfoot><tr><td colspan="2"><strong>Total Recettes<\/strong><\/td><td style="text-align:right;width:170px"><strong>+' + fmt(sousTotal) + ' €<\/strong><\/td><\/tr><\/tfoot><\/table>';
+      if (hasDepenses)
+        tablesHTML += '<h2 style="margin:20px 0 8px">2. Dépenses<\/h2>';
+      sousTotalMis = true;
+    }
+    if (!lcat.length) return;
+    const total = lcat.reduce((s, l) => s + l.montant, 0);
+    if (cat.type === 'Recette') {
+      if (!recTitreMis) { tablesHTML += '<h2 style="margin:20px 0 8px">1. Recettes<\/h2>'; recTitreMis = true; }
+      sousTotal += total;
+    }
+    tablesHTML += '<h3 style="margin:12px 0 6px">' + cat.libelle + '<\/h3><table>' +
+      '<thead><tr><th style="width:50px;text-align:center">Date<\/th><th>Libellé<\/th><th style="text-align:right;width:170px">Montant<\/th><\/tr><\/thead><tbody>' +
+      lcat.map(l => '<tr><td style="text-align:center">' + String(l.dateJour).padStart(2,'0') + '\/' + String(l.dateMois).padStart(2,'0') + '<\/td><td>' + esc(l.libelle) + '<\/td><td style="text-align:right;width:170px">' + (l.montant >= 0 ? '+' : '-') + fmt(Math.abs(l.montant)) + ' €<\/td><\/tr>').join('') +
+      '<\/tbody>' + (cat.type !== 'Dépense' ? '<tfoot><tr><td colspan="2">Total ' + cat.libelle + '<\/td><td style="text-align:right;width:170px">' + (total >= 0 ? '+' : '-') + fmt(Math.abs(total)) + ' €<\/td><\/tr><\/tfoot>' : '') + '<\/table>';
+    if (cat.type === 'Dépense') {
+      tablesHTML += '<table style="margin-top:6px;margin-bottom:16px"><tfoot>' +
+        '<tr><td colspan="2"><strong>Total Dépenses<\/strong><\/td><td style="text-align:right;width:170px"><strong>- ' + fmt(Math.abs(total)) + ' €<\/strong><\/td><\/tr>' +
+        '<\/tfoot><\/table>';
+    }
+  });
+
+  const verseDate    = document.getElementById('inp-verse-date').value.trim();
+  const soldeLigne   = '<tr><td colspan="2" style="font-weight:bold;border-top:2px solid #333">Solde<\/td><td style="text-align:right;width:170px;font-weight:bold;border-top:2px solid #333">' + (solde >= 0 ? '+' : '-') + fmt(Math.abs(solde)) + ' €<\/td><\/tr>';
+  const verseLigne   = '<tr><td colspan="2">Versé' + (verseDate ? ' le ' + verseDate : '') + '<\/td><td style="text-align:right;width:170px">' + (verse >= 0 ? '+' : '-') + fmt(Math.abs(verse)) + ' €<\/td><\/tr>';
+  const fondsLigne   = fonds !== 0
+    ? '<tr><td colspan="2">Fonds de caisse<\/td><td style="text-align:right;width:170px">' + (fonds >= 0 ? '+' : '-') + fmt(Math.abs(fonds)) + ' €<\/td><\/tr>' : '';
+  const html = '<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><title>' + esc(params.clocher) + ' — ' + labelPeriode() + '<\/title>' +
+    '<style>body{font-family:sans-serif;margin:32px;font-size:12px}h2{margin-bottom:8px;font-size:15px}h3{font-size:12px}table{width:100%;border-collapse:collapse;margin-bottom:8px}th,td{border:1px solid #ccc;padding:4px 8px}tfoot td{font-weight:bold;border-top:2px solid #333}.rec{text-align:right}.dep{text-align:right}.conseil{color:red;font-weight:bold;margin-bottom:16px;font-size:1rem}@media print{.conseil{display:none}}<\/style><\/head><body>' +
+    '<p class="conseil">CTRL+P pour imprimer<\/p>' +
+    '<h2 style="display:flex;justify-content:space-between">' + esc(params.clocher) + '<span>' + labelPeriode() + '<\/span><\/h2>' +
+    '<p style="font-size:11px;color:#888;margin-bottom:16px">Imprimé le ' + new Date().toLocaleDateString('fr-BE', { day: '2-digit', month: '2-digit', year: 'numeric' }) + '<\/p>' +
+    tablesHTML +
+    '<table style="margin-top:16px"><tbody>' +
+      '<tr><td colspan="3">&nbsp;<\/td><\/tr>' +
+      soldeLigne +
+      verseLigne +
+      fondsLigne +
+      '<tr><td colspan="3">&nbsp;<\/td><\/tr>' +
+    '<\/tbody><\/table>' +
+    (document.getElementById('inp-notes').value.trim() ? '<p style="margin-top:16px"><strong>Notes :<\/strong><\/p><table style="margin-top:4px;width:100%;border-collapse:collapse"><tbody><tr><td style="border:1px solid #ccc;min-height:80px;vertical-align:top;padding:6px">' + esc(document.getElementById('inp-notes').value) + '<\/td><\/tr><\/tbody><\/table>' : '') +
+    '<\/body><\/html>';
+
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  window.open(URL.createObjectURL(blob), '_blank');
+}
+
+// ══════════════════════════════════
+// Déplacer vers une autre période
+// ══════════════════════════════════
+function ouvrirDeplacer() {
+  const dlg = document.getElementById('dlg-deplacer');
+  document.getElementById('dlg-type').value  = periode.type;
+  document.getElementById('dlg-annee').value = periode.annee;
+  majSelectValeur(periode.type, periode.valeur);
+  dlg.style.display = 'flex';
+  document.getElementById('dlg-type').onchange = function() { majSelectValeur(this.value, 1); };
+  dlg.onkeydown = function(e) { if (e.key === 'Enter') confirmerDeplacer(); };
+  document.getElementById('dlg-annee').focus();
+}
+
+function fermerDeplacer() {
+  document.getElementById('dlg-deplacer').style.display = 'none';
+}
+
+function majSelectValeur(type, valeurCourante) {
+  const row   = document.getElementById('dlg-valeur-row');
+  const sel   = document.getElementById('dlg-valeur');
+  const label = document.getElementById('dlg-valeur-label');
+  sel.innerHTML = '';
+  if (type === 'Année') { row.style.display = 'none'; return; }
+  row.style.display = 'block';
+  const configs = { 'Mois': { max: 12, label: 'Mois', noms: MOIS_NOMS }, 'Trimestre': { max: 4, label: 'Trimestre' }, 'Semestre': { max: 2, label: 'Semestre' } };
+  const cfg = configs[type] || { max: 1 };
+  label.textContent = cfg.label || 'Numéro';
+  for (let i = 1; i <= cfg.max; i++) {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = cfg.noms ? cfg.noms[i - 1] : (type === 'Trimestre' ? 'T' + i : 'S' + i);
+    if (i === valeurCourante) opt.selected = true;
+    sel.appendChild(opt);
+  }
+}
+
+function confirmerDeplacer() {
+  const type   = document.getElementById('dlg-type').value;
+  const annee  = parseInt(document.getElementById('dlg-annee').value);
+  const valeur = type === 'Année' ? 0 : parseInt(document.getElementById('dlg-valeur').value);
+
+  if (isNaN(annee) || annee < 2000 || annee > 2100) { afficherAlerte('Année invalide.', 'erreur'); return; }
+
+  const cible = { type, annee, valeur };
+
+  // Empêcher de déplacer vers la même période
+  if (type === periode.type && annee === periode.annee && valeur === (periode.valeur || 0)) {
+    afficherAlerte('La période cible est identique à la période actuelle.', 'erreur'); return;
+  }
+
+  // Vérifier si la cible a déjà des données
+  const lignesCible = localStorage.getItem(cleLignes(cible));
+  const hasCible    = lignesCible && JSON.parse(lignesCible).length > 0;
+
+  const labelCible = labelPeriode(cible);
+  if (hasCible) {
+    afficherAlerte('La période ' + labelCible + ' contient déjà des données. Videz-la d\'abord.', 'erreur');
+    return;
+  }
+
+  confirmerAction('Déplacer toutes les données de ' + labelPeriode() + ' vers ' + labelCible + ' ?', [
+    { label: 'Annuler', style: 'btn-gris' },
+    { label: 'Déplacer', style: 'btn-bleu', action: () => _executerDeplacer(cible, labelCible) }
+  ]);
+}
+
+function _executerDeplacer(cible, labelCible) {
+  // Transférer les lignes
+  localStorage.setItem(cleLignes(cible), JSON.stringify(lignes));
+
+  // Transférer le versé
+  const verseRaw = localStorage.getItem(cleVerse());
+  if (verseRaw) localStorage.setItem(cleVerse(cible), verseRaw);
+
+  // Transférer les notes
+  const notesSource = localStorage.getItem(cleNotes()) || '';
+  if (notesSource) localStorage.setItem(cleNotes(cible), notesSource);
+
+  // Vider la période source
+  lignes = [];
+  sauvegarderLignes();
+  localStorage.removeItem(cleVerse());
+  localStorage.removeItem(cleNotes());
+  document.getElementById('inp-verse-montant').value = '';
+  document.getElementById('inp-verse-date').value    = '';
+  document.getElementById('inp-notes').value         = '';
+  reinitialiserFormulaire();
+
+  // Naviguer vers la période cible
+  Object.assign(periode, cible);
+  sauvegarderPeriode();
+  renderUIperiode();
+  chargerLignes();
+  chargerVerse();
+  chargerNotes();
+
+  fermerDeplacer();
+  rafraichirOnglets();
+  rafraichirTableau();
+  afficherAlerte('Données déplacées vers ' + labelCible + '.', 'info');
+}
+
+
+// ══════════════════════════════════
+// Vider
+// ══════════════════════════════════
+function _labelProchainePeriode() {
+  const pMax = { 'Mois': 12, 'Trimestre': 4, 'Semestre': 2 };
+  const max  = pMax[periode.type];
+  let p;
+  if (!max) {
+    p = { type: periode.type, annee: periode.annee + 1, valeur: 0 };
+  } else if (periode.valeur < max) {
+    p = { type: periode.type, annee: periode.annee, valeur: periode.valeur + 1 };
+  } else {
+    p = { type: periode.type, annee: periode.annee + 1, valeur: 1 };
+  }
+  return labelPeriode(p);
+}
+
+function viderPeriode() {
+  confirmerAction('Effacer toutes les lignes de ' + labelPeriode() + ' ?', [
+    { label: 'Annuler', style: 'btn-gris' },
+    { label: 'Vider seulement', style: 'btn-rouge', action: () => _executerVider(false) },
+    { label: 'Vider et passer à ' + _labelProchainePeriode(), style: 'btn-bleu', action: () => _executerVider(true) }
+  ]);
+}
+
+function _executerVider(avancer) {
+  lignes = [];
+  catActive = 0;
+  sauvegarderLignes();
+  localStorage.removeItem(cleVerse());
+  localStorage.removeItem(cleNotes());
+  document.getElementById('inp-verse-montant').value = '';
+  document.getElementById('inp-verse-date').value    = '';
+  document.getElementById('inp-notes').value         = '';
+  reinitialiserFormulaire();
+
+  if (avancer) {
+    const pMax = { 'Mois': 12, 'Trimestre': 4, 'Semestre': 2 };
+    const max  = pMax[periode.type];
+    if (max) {
+      if (periode.valeur < max) { periode.valeur++; }
+      else { periode.valeur = 1; periode.annee++; }
+    } else {
+      periode.annee++;
+    }
+    sauvegarderPeriode();
+    renderUIperiode();
+  }
+
+  rafraichirOnglets();
+  rafraichirTableau();
+}
+
+
+// ══════════════════════════════════
+// Raccourcis clavier
+// ══════════════════════════════════
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    if (document.getElementById('dlg-confirm').style.display !== 'none') fermerConfirm();
+    else if (modeEdition) annulerEdition();
+    else if (document.getElementById('dlg-deplacer').style.display !== 'none') fermerDeplacer();
+  }
+});
+
+// ══════════════════════════════════
+// Démarrage
+// ══════════════════════════════════
+chargerPeriode();
+chargerLignes();
+chargerVerse(); chargerNotes();
+renderUIperiode();
+rafraichirOnglets();
+rafraichirTableau();
+document.getElementById('inp-date').focus();
+</script>
+</body>
+</html>
