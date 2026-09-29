@@ -1,10 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'">
 <title>CLE — Encodage</title>
-<script>var _0x3437da=_0x1f15;function _0x1f15(_0x1b2157,_0x3cdf8d){var _0x3b609a=_0x3b60();return _0x1f15=function(_0x1f1580,_0x3c7c39){_0x1f1580=_0x1f1580-0x8e;var _0x2971e2=_0x3b609a[_0x1f1580];if(_0x1f15['hclGxK']===undefined){var _0x3baff5=function(_0x18a138){var _0x5ba76d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5bbbbf='',_0x2edc6d='';for(var _0x323c4b=0x0,_0x2bbd9b,_0x56556e,_0x134a87=0x0;_0x56556e=_0x18a138['charAt'](_0x134a87++);~_0x56556e&&(_0x2bbd9b=_0x323c4b%0x4?_0x2bbd9b*0x40+_0x56556e:_0x56556e,_0x323c4b++%0x4)?_0x5bbbbf+=String['fromCharCode'](0xff&_0x2bbd9b>>(-0x2*_0x323c4b&0x6)):0x0){_0x56556e=_0x5ba76d['indexOf'](_0x56556e);}for(var _0x17d232=0x0,_0x507082=_0x5bbbbf['length'];_0x17d232<_0x507082;_0x17d232++){_0x2edc6d+='%'+('00'+_0x5bbbbf['charCodeAt'](_0x17d232)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2edc6d);};_0x1f15['BWgKzC']=_0x3baff5,_0x1b2157=arguments,_0x1f15['hclGxK']=!![];}var _0x408ed6=_0x3b609a[0x0],_0x4733cf=_0x1f1580+_0x408ed6,_0x599999=_0x1b2157[_0x4733cf];return!_0x599999?(_0x2971e2=_0x1f15['BWgKzC'](_0x2971e2),_0x1b2157[_0x4733cf]=_0x2971e2):_0x2971e2=_0x599999,_0x2971e2;},_0x1f15(_0x1b2157,_0x3cdf8d);}function _0x3b60(){var _0x26b16e=['vhjVBMnZ','mtiYode0nMDSBvPdta','mtqWmJm5nJbMruDNrNu','y29SBgvJDgvZ','rmoPCgvUC2vZ','t2zMCMfUzgvZiejHChqUl01HCMLHz2vZl0z1BI4','ndG0oteXoxDptgLMEq','zgvWzw5Zzxm','CMvJB21Tyw5KyxrPB25Z','uMvJB21Tyw5KyxrPB25ZigrLCYbKW6LMDw50CW','q29SBgvJDgvZig1LC3nLCW','mtK5nwvsvvvsua','rmoPCgvUC2u','ntzXqNjgy2K','DhjVBMnZ','nJeYoty2ywvnqKTO','nteYrwvNrvbh','ms4X','tw9PCW','ntm0DLrYwwXO','vKvsu0LptG','mJq3mLjjyuLrrW','uMvJzxr0zq','nJaYmgvVALjYAW','uefsqu1t'];_0x3b60=function(){return _0x26b16e;};return _0x3b60();}(function(_0x1e2d12,_0xfb4072){var _0x1d8fd3=_0x1f15,_0x1c3458=_0x1e2d12();while(!![]){try{var _0x134464=parseInt(_0x1d8fd3(0x9c))/0x1+parseInt(_0x1d8fd3(0x8e))/0x2+-parseInt(_0x1d8fd3(0xa2))/0x3*(parseInt(_0x1d8fd3(0x9a))/0x4)+parseInt(_0x1d8fd3(0x98))/0x5*(parseInt(_0x1d8fd3(0xa0))/0x6)+parseInt(_0x1d8fd3(0xa4))/0x7*(-parseInt(_0x1d8fd3(0x9d))/0x8)+parseInt(_0x1d8fd3(0x93))/0x9+-parseInt(_0x1d8fd3(0x8f))/0xa;if(_0x134464===_0xfb4072)break;else _0x1c3458['push'](_0x1c3458['shift']());}catch(_0x1ef6f5){_0x1c3458['push'](_0x1c3458['shift']());}}}(_0x3b60,0x51251),window[_0x3437da(0xa1)]=_0x3437da(0x9e),window[_0x3437da(0xa5)]={'clocher':'Beaumont','periodicite':_0x3437da(0x9f)},window['CATEGORIES']=[{'id':_0x3437da(0x9b),'libelle':_0x3437da(0xa6),'type':'Recette'},{'id':_0x3437da(0x90),'libelle':_0x3437da(0x97),'type':_0x3437da(0xa3)},{'id':'offrandes','libelle':_0x3437da(0x92),'type':_0x3437da(0xa3)},{'id':_0x3437da(0x95),'libelle':_0x3437da(0x96),'type':_0x3437da(0xa3)},{'id':_0x3437da(0x94),'libelle':_0x3437da(0x91),'type':_0x3437da(0x99)}]);</script>
+<script>
+/* ── PARAMÈTRES — modifier directement ici ── */
+window.VERSION = '1.1';
+window.PARAMS = {
+  clocher:     "Beaumont",
+  periodicite: "Mois"
+};
+
+window.CATEGORIES = [
+  { id: "troncs",          libelle: "Troncs",          type: "Recette" },
+  { id: "collectes",       libelle: "Collectes messes",                    type: "Recette" },
+  { id: "offrandes",       libelle: "Offrandes Bapt./Mariages/Fun.", type: "Recette" },
+  { id: "recommandations", libelle: "Recommandations des défunts",          type: "Recette" },
+  { id: "depenses",        libelle: "Dépenses",         type: "Dépense" }
+];
+</script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {

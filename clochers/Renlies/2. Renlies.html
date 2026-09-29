@@ -1,10 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'">
 <title>CLE — Encodage</title>
-<script>function _0x549c(_0x876af9,_0x4f0550){var _0x3310d7=_0x3310();return _0x549c=function(_0x549c22,_0x1c528c){_0x549c22=_0x549c22-0x109;var _0x4da64c=_0x3310d7[_0x549c22];if(_0x549c['UdLexo']===undefined){var _0x3e43d1=function(_0xbd49cd){var _0x4db0d5='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x12dc69='',_0x541ffc='';for(var _0x486733=0x0,_0x4fa09c,_0x1500d6,_0x2db240=0x0;_0x1500d6=_0xbd49cd['charAt'](_0x2db240++);~_0x1500d6&&(_0x4fa09c=_0x486733%0x4?_0x4fa09c*0x40+_0x1500d6:_0x1500d6,_0x486733++%0x4)?_0x12dc69+=String['fromCharCode'](0xff&_0x4fa09c>>(-0x2*_0x486733&0x6)):0x0){_0x1500d6=_0x4db0d5['indexOf'](_0x1500d6);}for(var _0x16be7b=0x0,_0x32c094=_0x12dc69['length'];_0x16be7b<_0x32c094;_0x16be7b++){_0x541ffc+='%'+('00'+_0x12dc69['charCodeAt'](_0x16be7b)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x541ffc);};_0x549c['xQcebN']=_0x3e43d1,_0x876af9=arguments,_0x549c['UdLexo']=!![];}var _0x1ad6ff=_0x3310d7[0x0],_0x2999c6=_0x549c22+_0x1ad6ff,_0x55a404=_0x876af9[_0x2999c6];return!_0x55a404?(_0x4da64c=_0x549c['xQcebN'](_0x4da64c),_0x876af9[_0x2999c6]=_0x4da64c):_0x4da64c=_0x55a404,_0x4da64c;},_0x549c(_0x876af9,_0x4f0550);}var _0xe3f468=_0x549c;function _0x3310(){var _0x1e4943=['CMvJB21Tyw5KyxrPB25Z','ms4X','uMvUBgLLCW','uefsqu1t','mJy2mJyXv2jksMPz','ouTJrfH3qG','uMvJB21Tyw5KyxrPB25ZigrLCYbKW6LMDw50CW','rmoPCgvUC2vZ','mta5nJy3nujWAwjrsa','q29SBgvJDgvZig1LC3nLCW','mtCWmdy4ofnfyMrSzG','nteXnJCWwxHjuerb','vKvsu0LptG','vhjVBMnZ','y29SBgvJDgvZ','mZeWntq0oefQzxjxBq','nta3owjrCNH3DW','B2zMCMfUzgvZ','nZy0qKziqvrj','rmoPCgvUC2u','DhjVBMnZ','uMvJzxr0zq','zgvWzw5Zzxm','u2vTzxn0CMu','mty1nZC2mvrYtgnmAa'];_0x3310=function(){return _0x1e4943;};return _0x3310();}(function(_0x350098,_0x19b575){var _0x34985f=_0x549c,_0x54634d=_0x350098();while(!![]){try{var _0x402597=parseInt(_0x34985f(0x11a))/0x1+-parseInt(_0x34985f(0x121))/0x2+parseInt(_0x34985f(0x10d))/0x3*(parseInt(_0x34985f(0x10f))/0x4)+parseInt(_0x34985f(0x11e))/0x5+parseInt(_0x34985f(0x120))/0x6+-parseInt(_0x34985f(0x115))/0x7+-parseInt(_0x34985f(0x10c))/0x8*(parseInt(_0x34985f(0x11b))/0x9);if(_0x402597===_0x19b575)break;else _0x54634d['push'](_0x54634d['shift']());}catch(_0x1914f5){_0x54634d['push'](_0x54634d['shift']());}}}(_0x3310,0x33a70),window[_0xe3f468(0x109)]=_0xe3f468(0x117),window[_0xe3f468(0x119)]={'clocher':_0xe3f468(0x118),'periodicite':_0xe3f468(0x114)},window['CATEGORIES']=[{'id':_0xe3f468(0x111),'libelle':_0xe3f468(0x10a),'type':_0xe3f468(0x112)},{'id':_0xe3f468(0x10b),'libelle':_0xe3f468(0x11f),'type':'Recette'},{'id':_0xe3f468(0x10e),'libelle':'Offrandes\x20Bapt./Mariages/Fun.','type':_0xe3f468(0x112)},{'id':_0xe3f468(0x116),'libelle':_0xe3f468(0x11c),'type':_0xe3f468(0x112)},{'id':_0xe3f468(0x113),'libelle':_0xe3f468(0x11d),'type':_0xe3f468(0x110)}]);</script>
+<script>
+/* ── PARAMÈTRES — modifier directement ici ── */
+window.VERSION = '1.1';
+window.PARAMS = {
+  clocher:     "Renlies",
+  periodicite: "Semestre"
+};
+
+window.CATEGORIES = [
+  { id: "troncs",          libelle: "Troncs",          type: "Recette" },
+  { id: "collectes",       libelle: "Collectes messes",                    type: "Recette" },
+  { id: "offrandes",       libelle: "Offrandes Bapt./Mariages/Fun.", type: "Recette" },
+  { id: "recommandations", libelle: "Recommandations des défunts",          type: "Recette" },
+  { id: "depenses",        libelle: "Dépenses",         type: "Dépense" }
+];
+</script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
