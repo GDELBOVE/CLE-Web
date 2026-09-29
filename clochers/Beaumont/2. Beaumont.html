@@ -7,7 +7,7 @@
 <title>CLE — Encodage</title>
 <script>
 /* ── PARAMÈTRES — modifier directement ici ── */
-window.VERSION = '1.1';
+window.VERSION = '1.2';
 window.PARAMS = {
   clocher:     "Beaumont",
   periodicite: "Mois"
@@ -291,10 +291,28 @@ function labelPeriode(p = periode) {
   }
 }
 
-function sauvegarderPeriode() { localStorage.setItem('clc_periode', JSON.stringify(periode)); }
+const PREFIXE_STOCKAGE = 'clc_' + params.clocher + '_';
+
+// Migration ponctuelle des anciennes clés non préfixées par clocher (versions <= 1.1)
+function migrerAncienStockage() {
+  for (let i = localStorage.length - 1; i >= 0; i--) {
+    const cle = localStorage.key(i);
+    if (!cle || cle.startsWith(PREFIXE_STOCKAGE) || !cle.startsWith('clc_')) continue;
+    const reste = cle.slice(4);
+    const estAncienneCle = reste === 'periode' || reste.startsWith('lignes_') || reste.startsWith('verse_') || reste.startsWith('notes_');
+    if (!estAncienneCle) continue;
+    const nouvelleCle = PREFIXE_STOCKAGE + reste;
+    if (localStorage.getItem(nouvelleCle) === null) {
+      localStorage.setItem(nouvelleCle, localStorage.getItem(cle));
+    }
+    localStorage.removeItem(cle);
+  }
+}
+
+function sauvegarderPeriode() { localStorage.setItem(PREFIXE_STOCKAGE + 'periode', JSON.stringify(periode)); }
 
 function chargerPeriode() {
-  const raw = localStorage.getItem('clc_periode');
+  const raw = localStorage.getItem(PREFIXE_STOCKAGE + 'periode');
   if (raw) { try { Object.assign(periode, JSON.parse(raw)); } catch(e) {} }
   periode.type = params.periodicite || 'Mois';
   if (!periode.valeur) periode.valeur = 1;
@@ -400,16 +418,16 @@ function basculerOnglet(idx) {
 // ══════════════════════════════════
 function cleLignes(p = periode) {
   const { type, annee, valeur } = p;
-  if (type === 'Année') return 'clc_lignes_' + type + '_' + annee + '_0';
-  return 'clc_lignes_' + type + '_' + annee + '_' + valeur;
+  if (type === 'Année') return PREFIXE_STOCKAGE + 'lignes_' + type + '_' + annee + '_0';
+  return PREFIXE_STOCKAGE + 'lignes_' + type + '_' + annee + '_' + valeur;
 }
 
 function cleVerse(p = periode) {
   const { type, annee, valeur } = p;
-  if (type === 'Année') return 'clc_verse_' + type + '_' + annee + '_0';
-  return 'clc_verse_' + type + '_' + annee + '_' + valeur;
+  if (type === 'Année') return PREFIXE_STOCKAGE + 'verse_' + type + '_' + annee + '_0';
+  return PREFIXE_STOCKAGE + 'verse_' + type + '_' + annee + '_' + valeur;
 }
-function cleNotes(p = periode) { return cleVerse(p).replace('clc_verse_', 'clc_notes_'); }
+function cleNotes(p = periode) { return cleVerse(p).replace(PREFIXE_STOCKAGE + 'verse_', PREFIXE_STOCKAGE + 'notes_'); }
 function chargerNotes() { document.getElementById('inp-notes').value = localStorage.getItem(cleNotes()) || ''; }
 function sauvegarderNotes() { localStorage.setItem(cleNotes(), document.getElementById('inp-notes').value); }
 
@@ -953,6 +971,7 @@ document.addEventListener('keydown', function(e) {
 // ══════════════════════════════════
 // Démarrage
 // ══════════════════════════════════
+migrerAncienStockage();
 chargerPeriode();
 chargerLignes();
 chargerVerse(); chargerNotes();
